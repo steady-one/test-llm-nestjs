@@ -15,7 +15,7 @@ export class GeminiService implements ILlmProvider {
     this.config = this.llmConfigService.getConfig(LlmProvider.GEMINI);
     this.client = new OpenAI({
       apiKey: this.config.apiKey,
-      baseURL: `${this.config.baseUrl}/openai`,
+      baseURL: `${this.config.baseUrl}/openai/`,
     });
   }
 

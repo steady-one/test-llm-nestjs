@@ -22,7 +22,7 @@ export class LlmConfigService {
       [LlmProvider.GEMINI]: {
         apiKey: this.configService.get<string>('GOOGLE_API_KEY') || '',
         baseUrl: 'https://generativelanguage.googleapis.com/v1beta',
-        defaultModel: 'gemini-2.0-flash',
+        defaultModel: 'gemini-3-pro-preview',
       },
       [LlmProvider.GROK]: {
         apiKey: this.configService.get<string>('XAI_API_KEY') || '',
